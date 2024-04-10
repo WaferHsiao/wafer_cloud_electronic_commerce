@@ -18,11 +18,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependency>
+    <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.4</version>
-    </dependency>
+    </parent>
+
+    <dependencies>
+
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -35,7 +39,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.2.4</version>
             </plugin>
         </plugins>
     </build>
