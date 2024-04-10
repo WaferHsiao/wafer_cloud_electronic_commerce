@@ -4,9 +4,9 @@ spring:
   application:
     name: wafer_order #设置当前应用名称，在eureka中Aoolication显示，通过该名称可以获取路径
   datasource:
-    url: jdbc:mysql://localhost:3306/cloud2024?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/db2024?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&tinyInt1isBit=false
     username: root
-    password: 174713
+    password: 19991201
     driver-class-name: com.mysql.cj.jdbc.Driver
   cloud:
     nacos:
