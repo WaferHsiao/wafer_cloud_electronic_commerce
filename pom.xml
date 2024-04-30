@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>wafer_order</module>
+        <module>wafer_gateway</module>
     </modules>
 
     <properties>
@@ -202,6 +203,15 @@
                 <artifactId>springdoc-openapi-starter-webflux-ui</artifactId>
                 <version>${springdoc-webflux.version}</version>
             </dependency>
+
+            <!--wafer依赖-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.29</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
