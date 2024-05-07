@@ -11,6 +11,7 @@
     <modules>
         <module>wafer_order</module>
         <module>wafer_gateway</module>
+        <module>wafer_common</module>
     </modules>
 
     <properties>
@@ -209,6 +210,12 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.29</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.32</version>
             </dependency>
 
 

@@ -1,5 +1,6 @@
 package com.wafer.business.controller;
 
+import com.wafer.business.exception.CommonException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,5 +21,6 @@ public class orderCreate {
     public String getOrderDetail(@RequestParam String orderId){
         return "orderId:"+orderId  + ";port："+portValue;
     }
+
 
 }
