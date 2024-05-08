@@ -19,7 +19,7 @@ public class orderCreate {
 
     @GetMapping("/detail")
     public String getOrderDetail(@RequestParam String orderId){
-        return "orderId:"+orderId  + ";port："+portValue;
+        return "orderId:"+orderId + ";port："+portValue;
     }
 
 
