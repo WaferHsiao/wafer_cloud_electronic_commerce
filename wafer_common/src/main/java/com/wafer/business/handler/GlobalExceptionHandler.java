@@ -18,8 +18,8 @@ public class GlobalExceptionHandler {
     public ServiceResponse<Object> handleException(Exception e) {
         logger.error("system error:",e);
         ServiceResponse<Object> serviceResponse = new ServiceResponse<>();
-        serviceResponse.setMsg("system error：" + e.getMessage());
-        serviceResponse.setCode(ReturnEnum.SYSTEM_ERROR.getMsg());
+        serviceResponse.setMsg(e.getMessage());
+        serviceResponse.setCode(ReturnEnum.SYSTEM_ERROR.getCode());
         return serviceResponse;
     }
 

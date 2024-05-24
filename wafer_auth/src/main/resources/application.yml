@@ -4,7 +4,7 @@ spring:
   application:
     name: wafer-auth #设置当前应用名称，在eureka中Aoolication显示，通过该名称可以获取路径
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/db2024?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&tinyInt1isBit=false
+    url: jdbc:mysql://127.0.0.1:3306/wafer_electronic_mall_db?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&tinyInt1isBit=false
     username: root
     password: 19991201
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -15,3 +15,12 @@ spring:
       config:
         import-check:
           enabled: false
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    suffix: .html
+    enabled: true
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml

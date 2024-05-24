@@ -20,5 +20,12 @@ spring:
             - Path=/api/order/**
           filters:
             - RewritePath=/api/(?<segment>.*),/$\{segment}
+        - id: auth_route
+          uri: lb://wafer-auth
+          predicates:
+            - Path=/api/auth/**
+          filters:
+            - RewritePath=/api/(?<segment>.*),/$\{segment}
+
 
 
